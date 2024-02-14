@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 50%;
+        }      
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <caption><h2>REGISTRATION</h2></caption>
+            <tr>
+                <td>
+                    <label for="fname">First Name</label>
+                </td>
+                <td>
+                    <input style="width: 98%;" type="text" name="f_name" id="fname" placeholder="John" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sname">Second Name</label>
+                </td>
+                <td>
+                    <input style="width: 98%;" type="text" name="s_name" id="sname" placeholder="Lee" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mail">Email</label>
+                </td>
+                <td>
+                    <input style="width: 98%;" type="email" name="mail" id="email" placeholder="something@gmail.com" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="num">Mobile</label>
+                </td>
+                <td>
+                    <input style="width: 98%;" type="tel" name="number" id="num" placeholder="9876543210" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pwd">Password</label>
+                </td>
+                <td>
+                    <input style="width: 98%;" type="password" name="pswd" id="pwd" placeholder="Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <label for="skills">Skills</label>
+                </td>
+                <td>
+                    <label for="skill1">HTML</label>
+                    <input type="checkbox" name="skill1" id="skill1" value="HTML">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="skill2">CSS</label>
+                    <input type="checkbox" name="skill2" id="skill2" value="CSS">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="skill3">JavaScript</label>
+                    <input type="checkbox" name="skill3" id="skill3" value="JavaScript">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="skill4">React</label>
+                    <input type="checkbox" name="skill4" id="skill4" value="React">
+                </td>
+            </tr>
+            <tr >
+                <td rowspan="2">
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <label for="gender1">Male</label>
+                    <input type="radio" name="gender" id="gender1" value="male">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender2">Female</label>
+                    <input type="radio" name="gender" id="gender2" value="female">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="location">Location</label>
+                </td>
+                <td>
+                    <input style="width: 98%;" list="loc" name="location" id="location"/>
+                    <datalist id="loc">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Khammam">Khammam</option>
+                        <option value="Warangal">Warangal</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="res">Resume</label>
+                </td>
+                <td>
+                    <input type="file" name="resume" id="res" required>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2">
+                    <input style="width: 100%;" type="submit" >
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
